@@ -1,0 +1,103 @@
+/* Formulaire de contact */
+body
+{
+    background: rgb(237,237,237);
+    background: rgb(102,102,102);
+    background: linear-gradient(90deg, rgb(226, 226, 226) 0%, rgba(139,0,0,1) 100%); 
+}
+#message
+{
+    height: 100px;
+    width: 450px;
+}
+
+#Inscription
+{
+    text-decoration: underline red;
+}
+#content_form 
+{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+  
+#formulaire 
+{
+    max-width: 450px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+  
+#formulaire h1 
+{
+    text-align: center;
+    color: #333;
+}
+  
+#wrap_form 
+{
+    display: grid;
+    gap: 20px;
+}
+  
+input:focus
+{
+    outline:none;
+    background-color: rgb(132, 0, 0);
+    border:1px solid black;
+    color: white;
+}
+#name, .register_div 
+{
+    display: grid;
+    gap: 10px;
+}
+  
+label 
+{
+    display: block;
+}
+  
+input[type='text'],
+input[type='email'],
+button[type='submit'] 
+{
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+label
+{
+    font-size: 25px;
+}
+  
+button[type='submit'] 
+{
+    background-color: #8b0000;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+  
+button[type='submit']:hover 
+{
+    background-color: #a30000;
+}
+
+@media only screen and (max-width: 700px) 
+{
+    #message
+    {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 500px) 
+{
+    #message
+    {
+        width: 200px;
+    }
+}

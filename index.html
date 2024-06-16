@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur le Portail d'Apprentissage Minecraft!</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="css/StyleCommun.css">
+    <link rel="stylesheet" href="css/barre_navigation/base.css">
+    <link rel="stylesheet" href="css/barre_navigation/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/menu.js"></script>
+</head>
+<body>  
+    <span id="menu-icon" class="material-symbols-outlined">menu</span>
+    <nav id="main-menu">
+        <ul class="ul">
+            <img src="image/Logo.jfif" id="logo" alt="">
+            <li class="li"><a class="a" id="tutoListe" href="#">Accueil</a></li>
+            <li class="submenu li">
+                <a class="a" href="#">Tuto</a>
+                <ul class="ul">
+                    <li class="li"><a class="a" href="Tuto_Alu.html">Alu</a></li>
+                    <li class="li"><a class="a" href="Tuto_registre.html">registre</a></li>
+                    <li class="li"><a class="a" href="Tuto_decodeur_7_segment.html">decodeur_7_segment</a></li>
+                </ul>
+            </li>
+            <li class="li"><a class="a" href="à_propos.html">À propos</a></li>
+            <li class="li"><a class="a" href="à_propos.html#content_form">Contact</a></li>
+            <button id="c-button" class="c-button c-button--gooey">
+                Dark thème
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+        </ul>
+    </nav>
+   
+    <video id="tuto_video" src="Vidéo/accueil.mp4" type="vidéo/mp4" autoplay loop></video>
+    <main>
+        <!-- Section de bienvenue -->
+        <section class="tuto">
+            <h1>Bienvenue sur le Portail d'Apprentissage Minecraft !</h1>
+            <h1>Notre Mission</h1>
+            <p>
+                Notre site est dédié à <strong>transformer votre passion pour Minecraft en une aventure éducative</strong>. Nous croyons fermement que le jeu peut être plus qu’un simple divertissement; il peut être un <strong>outil puissant pour l’apprentissage et l’innovation</strong>. À travers le monde fascinant de la redstone, nous vous guidons pas à pas dans la construction de <strong>circuits logiques et de structures automatisées</strong> qui vont bien au-delà des limites du jeu traditionnel.
+                </p>
+                <p>
+                Minecraft est un <strong>terrain de jeu numérique</strong> où l’imagination rencontre la construction. 
+                </p>
+                <p>
+                Avec la redstone, ce monde prend vie, offrant une <strong>infinité de possibilités</strong> pour ceux qui cherchent à explorer les concepts de l’électronique et de la logique dans un environnement interactif. Notre objectif est de vous fournir les <strong>compétences et la connaissance nécessaires pour transformer vos idées en réalité</strong>.
+                
+                Nous avons conçu une série de <strong>tutoriels et de cours</strong> qui s’adressent à tous les niveaux de compétence, des débutants aux constructeurs avancés. Chaque leçon est conçue pour renforcer votre compréhension de la redstone et de ses applications, vous permettant de créer des <strong>mécanismes complexes</strong> tels que des ordinateurs fonctionnels, des systèmes de sécurité élaborés et des pièges ingénieux.
+                </p>
+                <p>  
+        </section>
+
+        <!-- Présentation des cours -->
+        <section class="tuto" id="tuto">
+            <div id="TutoDisponible">
+                <h2>Tuto Disponibles</h2>
+            </div>
+            
+            <div class="wrapTuto">
+               <div class="contentTuto">
+                    <img src="image/alu/Étape_7.png" class="img_tuto" alt="">
+                    <a href="tuto_Alu.html"><strong>Tuto Alu: </strong> Découvrez comment construire et utiliser des unités arithmétiques logiques pour effectuer des calculs complexes dans Minecraft.</a>
+               </div>
+
+               <div class="contentTuto">
+                    <img src="image/registre 8 bits/Étape_5.png" class="img_tuto">
+                    <a href="tuto_registre.html"><strong>Tuto Registre 8 Bits: </strong>Apprenez à stocker et à manipuler des données binaires avec des registres personnalisés.</a>   
+               </div>
+               
+               <div class="contentTuto">
+                    <img href="Tuto_decodeur_7_segment.html" src="image/decodeur 7 segment/Présentation.jpg" class="img_tuto" alt="">
+                    <a href="Tuto_decodeur_7_segment.html"><strong>Tuto Décodeur 7 Segments: </strong>Maîtrisez l’art de l’affichage numérique en créant votre propre décodeur 7 segments.</a>      
+                </div>
+            </div>
+        </section>
+
+        <!-- Témoignages -->
+
+       
+        <section class="tuto">
+            <h1>Avis</h1>
+    <section class="Avis">
+        <div class="formB">
+             <input type="radio">
+             <h1>5 Étoiles</h1>
+        </div>
+        <div class="formA">
+            <div class="barre">
+                <div class="étoile5"></div>
+             </div>
+             <p>80%</p>
+        </div>    
+    </section>
+
+    <section class="Avis">
+        <div class="formB">
+             <input type="radio">
+             <h1>4 Étoiles</h1>
+        </div>
+        <div class="formA">
+            <div class="barre">
+                <div class="étoile4"></div>
+             </div>
+             <p>20%</p>
+        </div>    
+    </section>
+
+    <section class="Avis">
+        <div class="formB">
+             <input type="radio">
+             <h1>3 Étoiles</h1>
+        </div>
+        <div class="formA">
+            <div class="barre">
+                <div class="étoileAutre"></div>
+             </div>
+             <p>0%</p>
+        </div>    
+    </section>
+
+    <section class="Avis">
+        <div class="formB">
+             <input type="radio">
+             <h1>2 Étoiles</h1>
+        </div>
+        <div class="formA">
+            <div class="barre">
+                <div class="étoileAutre"></div>
+             </div>
+             <p>0%</p>
+        </div>    
+    </section>
+
+    <section class="Avis">
+        <div class="formB">
+             <input type="radio">
+             <h1>1 Étoiles</h1>
+        </div>
+        <div class="formA">
+            <div class="barre">
+                <div class="étoileAutre"></div>
+             </div>
+             <p>0%</p>
+        </div>    
+    </section>
+            
+            <h2>Témoignages d'Élèves Satisfaits</h2>
+            <blockquote class="commentaire">
+                <div class="personne">
+                    <img src="image/visage/visage1.jfif" class="visage">
+                    <h3 class="nom"> - Alexis B.</h3>
+                </div>
+                <p>"Grâce à ce site, j'ai pu intégrer mes connaissances en informatique dans Minecraft et construire mon premier ordinateur en redstone !"</p>
+            </blockquote>
+            <blockquote class="commentaire">
+                <div class="personne">
+                    <img src="image/visage/visage3.jfif" class="visage">
+                    <h3 class="nom">- Emilie D.</h3>
+                </div>
+                <p> "Les tutoriels sont si bien expliqués que même un débutant comme moi peut créer des circuits complexes !" </p>
+            </blockquote>
+            <blockquote class="commentaire">
+                <div class="personne">
+                    <img src="image/visage/visage2.jfif" class="visage">
+                    <h3 class="nom">- Lucas R.</h3>
+                </div>
+               <p> "Ce site a changé ma façon de jouer à Minecraft. Je ne suis plus seulement un joueur, je suis un créateur !" <p>
+            </blockquote>
+            <button id="plusAvis">Lire plus d'avis</button>
+       
+            
+        </section>
+
+        <section class="tuto">
+            <p>Rejoignez notre communauté d’apprenants et commencez à construire dès aujourd’hui !</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">@ Copyrignt Raphael Arseneault</a>
+        <a href="#">Cégep de rimouski</a>
+        <a href="#">Autre site</a>
+        <a href="à_propos.html">À propos</a>
+        <a href="#">Retour</a>
+    </footer>
+    <script src="js/darkThème.js"></script>
+    <script src="jsPlayVidéo.js"></script>
+</body>
+</html>

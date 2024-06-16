@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décodeur 7 segments</title>
+    <link rel="stylesheet" href="css/tutoStyle.css">
+    <link rel="stylesheet" href="CSS/styleCommun.css">
+    <link rel="stylesheet" href="css/barre_navigation/base.css">
+    <link rel="stylesheet" href="css/barre_navigation/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/menu.js"></script>
+</head>
+<body>
+    <span id="menu-icon" class="material-symbols-outlined">menu</span>
+    <nav id="main-menu">
+        <ul class="ul">
+            <img src="image/Logo.jfif" id="logo" alt="">
+            <li class="li"><a class="a" href="index.html">Accueil</a></li>
+            <li class="submenu li">
+                <a class="a" href="#" id="tutoListe">Tuto</a>
+                <ul class="ul">
+                    <li class="li"><a class="a" href="Tuto_Alu.html">Alu</a></li>
+                    <li class="li"><a class="a" href="Tuto_registre.html">registre</a></li>
+                    <li class="li"><a class="a" id="tutoListe" href="Tuto_decodeur_7_segment.html">decodeur_7_segment</a></li>
+                </ul>
+            </li>
+            <li class="li"><a class="a" href="à_propos.html">À propos</a></li>
+            <li class="li"><a class="a" href="à_propos.html#content_form">Contact</a></li>
+            <button id="c-button" class="c-button c-button--gooey">
+                Dark thème
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+        </ul>
+    </nav>
+   
+
+    <main id="content">
+        <video id="tuto_video" src="vidéo/Décodeur_7_segment.mp4" type="video/mp4" autoplay loop></video> 
+        <section class="tuto">
+            <p>
+                Le décodeur 7 segments est un dispositif électronique souvent utilisé dans les affichages numériques, comme les montres digitales, les compteurs, et les thermomètres électroniques. Dans Minecraft, un décodeur 7 segments peut être construit en utilisant des blocs de redstone pour simuler le fonctionnement d’un affichage numérique réel.
+            </p>
+        </section>
+        <!-- Étape 1 -->
+        <section class="tuto droit">
+            <img src="image/decodeur 7 segment/Étape_1.png" class="img_tuto" alt="">
+            <div>
+                <h2>Étape 1</h2>
+                <p>Pour l’étape 1 de la création d’un décodeur 7 segments dans Minecraft, commencez par construire 14 lignes de blocs. La moitié de ces lignes doit être équipée d’une porte logique NOT pour inverser le signal. Cela permettra de contrôler correctement l’affichage des segments individuels en fonction des entrées binaires fournies. Assurez-vous que les lignes sont bien organisées et connectées pour faciliter les étapes suivantes du montage.</p>
+            </div>
+        </section>
+    
+        <!-- Étape 2 -->
+        <section class="tuto inverse">
+            <div>
+                <h2>Étape 2</h2>
+                <p>Pour connecter les composants du premier segment d’un décodeur 7 segments, suivez les connexions rouges visibles dans l’image. Ces connexions indiquent comment les blocs ou modules gris doivent être reliés entre eux. Assurez-vous que chaque connexion est correctement établie pour permettre une transmission efficace du signal. Cela garantira que le premier segment s’allume correctement en fonction des entrées binaires.</p>
+            </div>
+            <img src="image/decodeur 7 segment/Étape_2.png" class="img_tuto" alt="">
+        </section>
+    
+        <!-- Étape 3 -->
+        <section class="tuto droit">
+            <img src="image/decodeur 7 segment/Étape_3.png" class="img_tuto" alt="">
+            <div>
+                <h2>Étape 3</h2>
+                <p>Pour construire un décodeur 7 segments dans Minecraft, il est nécessaire d’agrandir la longueur des lignes de blocs pour accueillir davantage de segments. Cette extension doit être effectuée régulièrement pour maintenir l’uniformité et la précision du circuit. Chaque ligne doit être étendue de manière égale pour que tous les segments puissent être correctement connectés et fonctionner de manière synchronisée. Cela garantit que le décodeur affiche les chiffres correctement.</p>
+            </div>
+        </section>
+    
+        <!-- Étape 4 -->
+        <section class="tuto inverse">
+            <div>
+                <h2>Étape 4</h2>
+                <ol>
+                    <li>Connectez les lignes aux entrées du segment :
+                        <ul>
+                            <li>Reliez les lignes de blocs aux entrées du deuxième segment, en suivant le modèle de connexion requis pour activer les segments individuels.</li>
+                        </ul>
+                    </li>
+                    <li>Testez le segment :
+                        <ul>
+                            <li>Activez les entrées pour vous assurer que le deuxième segment s’allume correctement en fonction des signaux reçus.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+                <img src="image/decodeur 7 segment/Étape_4.png" class="img_tuto" alt="">
+            </section>    
+
+            <!-- Étape 5 -->
+<section class="tuto droit">
+    <img src="image/decodeur 7 segment/Étape_5.png" class="img_tuto" alt="">
+    <div>
+        <h2>Étape 5</h2>
+        <ol>
+            <li><strong>Positionnez les blocs</strong>: Commencez par placer les blocs de manière à reproduire la forme du segment que vous voyez dans l’image. Cette étape est cruciale pour s’assurer que le segment sera correctement formé.</li>
+            <li><strong>Installez les portes logiques</strong>: Selon le segment que vous construisez, vous aurez besoin de différentes combinaisons de portes logiques pour traiter les signaux d’entrée. Installez ces portes logiques aux endroits appropriés, comme indiqué par le modèle.</li>
+            <li><strong>Connectez les circuits</strong>: Utilisez des torches de redstone, des répéteurs et du fil de redstone pour connecter les portes logiques aux blocs du segment. Assurez-vous que les connexions correspondent à celles du modèle pour que le segment fonctionne correctement.</li>
+            <li><strong>Vérifiez le fonctionnement</strong>: Après avoir terminé la construction, testez chaque entrée pour vous assurer que le segment s’illumine comme prévu. Si ce n’est pas le cas, vérifiez vos connexions et la disposition des portes logiques.</li>
+        </ol>
+    </div>
+</section>
+
+<!-- Étape 6 -->
+<section class="tuto inverse">
+    <div>
+        <h2>Étape 6</h2>
+        <p>vous allez créer un autre segment en utilisant une approche légèrement différente pour renforcer votre compréhension du processus:</p>
+        <ol>
+            <li><strong>Analysez le modèle</strong>: Regardez attentivement l’image et notez les différences par rapport au segment précédent. Cela peut inclure la disposition des blocs ou la configuration des circuits.</li>
+            <li><strong>Adaptez la construction</strong>: En tenant compte de vos observations, adaptez la construction du nouveau segment. Cela peut impliquer de changer l’orientation des portes logiques ou la manière dont les circuits sont connectés.</li>
+            <li><strong>Testez et ajustez</strong>: Comme toujours, testez le segment pour vous assurer qu’il fonctionne correctement. Si vous rencontrez des problèmes, n’hésitez pas à ajuster la construction jusqu’à ce que le segment fonctionne comme il se doit.</li>
+        </ol>
+    </div>
+    <img src="image/decodeur 7 segment/Étape_6.png" class="img_tuto" alt="">
+</section>
+
+<!-- Étape 7 -->
+<section class="tuto droit">
+    <img src="image/decodeur 7 segment/Étape_7.png" class="img_tuto" alt="">
+    <div>
+        <h2>Étape 7</h2>
+        <ol>
+            <li><strong>Examinez l’image</strong> : Regardez attentivement l’image pour comprendre comment le dernier segment doit être construit. Repérez les blocs et les connexions qui sont spécifiques à ce segment.</li>
+            <li><strong>Construisez le segment</strong> : Placez les blocs et configurez les circuits de redstone en suivant le modèle du segment montré dans l’image. Assurez-vous que la disposition des blocs et les connexions des circuits correspondent exactement à ce qui est requis.</li>
+            <li><strong>Installez les portes logiques</strong> : Selon le design du segment, installez les portes logiques nécessaires pour manipuler les signaux d’entrée. Cela peut inclure des portes NOT, AND, OR, etc., selon la logique requise pour ce segment.</li>
+            <li><strong>Testez le segment</strong> : Une fois la construction terminée, activez les entrées binaires pour tester le segment. Vérifiez que le segment s’allume et s’éteint correctement en réponse aux différents signaux.</li>
+            <li><strong>Dépannez si nécessaire</strong> : Si le segment ne fonctionne pas comme prévu, revérifiez les connexions et la configuration des portes logiques. Faites les ajustements nécessaires jusqu’à ce que le segment fonctionne parfaitement.</li>
+        </ol>
+    </div>
+</section>
+
+<!-- Étape 8 -->
+<section class="tuto inverse">
+    <div>
+        <h2>Étape 8</h2>
+        <ol>
+            <li><strong>Alimentez les segments</strong> : Placez des blocs de redstone derrière chaque segment de l’afficheur. Ces blocs serviront à alimenter les segments lorsque vous activerez le décodeur.</li>
+            <li><strong>Configurez les blocs de commande</strong> : Utilisez des blocs de commande pour contrôler l’alimentation des segments. Chaque bloc de commande doit être programmé avec une commande qui active ou désactive le segment correspondant.</li>
+            <li><strong>Prenez note des coordonnées</strong> : Il est important de noter les coordonnées exactes de chaque bloc de commande. Ces informations seront nécessaires pour les étapes ultérieures, où vous devrez peut-être ajuster les commandes ou la logique de contrôle.</li>
+            <li><strong>Testez l’illumination</strong> : Assurez-vous que chaque segment peut être allumé individuellement. Activez les blocs de commande pour vérifier que les segments s’illuminent correctement et que l’alimentation est stable.</li>
+            <li><strong>Vérifiez l’uniformité</strong> : Tous les segments doivent s’allumer avec la même intensité et sans délai. Si ce n’est pas le cas, vérifiez les connexions et assurez-vous que les blocs de redstone sont placés correctement.</li>
+        </ol>
+    </div>
+    <img src="image/decodeur 7 segment/Étape_8.png" class="img_tuto" alt="">
+</section>
+
+<!-- Étape 9 -->
+<section class="tuto droit">
+    <img src="image/decodeur 7 segment/Étape_9.png" class="img_tuto" alt="">
+    <div>
+        <h2>Étape 9</h2>
+        <ol>
+            <li><strong>Placez les blocs de commande</strong> : Positionnez un bloc de commande à côté de chaque sortie du décodeur. Ces blocs seront programmés pour téléporter un bloc de redstone ou de l’air, selon l’état de la sortie.</li>
+            <li><strong>Programmez les blocs de commande</strong> : Ouvrez l’interface de chaque bloc de commande et entrez la commande suivante pour téléporter un bloc de redstone :
+                <code>/setblock &lt;x&gt; &lt;y&gt; &lt;z&gt; minecraft:redstone_block</code>
+                Remplacez &lt;x&gt; &lt;y&gt; &lt;z&gt; par les coordonnées où vous voulez que le bloc de redstone apparaisse.</li>
+            <li><strong>Configurez la porte NOT</strong> : À côté de chaque bloc de commande, placez une porte logique NOT (une torche de redstone avec un bloc devant elle). Cela inversera l’état du signal : si la sortie est désactivée (aucune charge), la porte NOT activera le bloc de commande correspondant.</li>
+            <li><strong>Ajoutez une commande pour l’air</strong> : Pour le bloc de commande qui doit enlever le bloc de redstone, utilisez la commande suivante :
+                <code>/setblock &lt;x&gt; &lt;y&gt; &lt;z&gt; minecraft:air</code>
+                Encore une fois, remplacez &lt;x&gt; &lt;y&gt; &lt;z&gt; par les coordonnées où le bloc de redstone était précédemment placé.</li>
+            <li><strong>Testez le système</strong> : Activez votre décodeur pour voir si les blocs de redstone sont téléportés correctement. Si un segment doit être éteint, le bloc de redstone devrait être remplacé par de l’air.</li>
+        </ol>
+    </div>
+</section>
+
+<!-- Étape Finale -->
+<section class="tuto inverse">
+    <div>
+        <h2>Étape Finale</h2>
+        <ol>
+            <li><strong>Rapprochez les entrées</strong> : Prenez les fils d’entrée (les signaux binaires) et connectez-les aux entrées de votre décodeur 7 segments. Assurez-vous que chaque fil est correctement associé à son segment correspondant.</li>
+            <li><strong>Activez le décodeur</strong> : Une fois les connexions établies, activez le décodeur en fournissant les signaux d’entrée appropriés. Vous devriez maintenant voir les chiffres ou les symboles s’afficher sur l’afficheur 7 segments en temps réel !</li>
+            <li><strong>Vérifiez l’affichage</strong> : Testez différentes combinaisons d’entrées pour vous assurer que tous les segments s’allument correctement. Si tout fonctionne comme prévu, félicitations ! Vous avez réussi à construire un décodeur 7 segments fonctionnel dans Minecraft.</li>
+        </ol>
+    </div>
+    <img src="image/decodeur 7 segment/Étape_10.png" class="img_tuto" alt="">
+</section>
+    </main>
+    
+    <footer>
+        <a href="#">@ Copyrignt Raphael Arseneault</a>
+        <a href="#">Cégep de rimouski</a>
+        <a href="#">Autre site</a>
+        <a href="à_propos.html">À propos</a>
+        <a href="#">Retour</a>
+    </footer>
+
+    <script src="jsPlayViédo.js"></script>
+    <script src="js/darkThème.js"></script>
+</body>
+</html>

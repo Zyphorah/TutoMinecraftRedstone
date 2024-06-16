@@ -1,0 +1,52 @@
+:root 
+{
+    --navbar-height: 2.8rem;
+}
+
+/* Styles de base */
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+@media (max-width: 600px) 
+{
+    body 
+    {
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+nav 
+{
+    background-color: #333;
+    height: var(--navbar-height);
+}
+
+.ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.li 
+{
+    margin: 0 10px;
+}
+
+.a 
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.a:hover 
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,162 @@
+/* L'entête de la page */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;    
+}
+
+#tuto_video
+{
+    width: 99.9%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#tutoListe
+{
+    background-color: rgb(134, 32, 32);
+}
+
+/* pied de la page */
+.main-content 
+{
+    min-height: calc(70vh - 70px); 
+}
+footer 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333;
+    color: white;
+    position: relative; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover 
+{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) 
+{
+    footer a
+    {
+        font-size: 10px;
+    }
+}
+
+#logo
+{
+    width: 44px;
+    height: auto;
+}
+
+/* Button dark thème */
+
+
+.c-button 
+{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    background-color: #3e3e3e;
+    border: none;
+  }
+  
+  .c-button--gooey 
+  {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 44px;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: #fff;
+    width: 34%;
+    height: 44px;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(-125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  /* Hover styles */
+  .c-button--gooey:hover 
+  {
+    color: #3e3e3e;
+    background-color: #ffffff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div 
+  {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+
+  /* Définir les keyframes pour l'animation */
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Appliquer l'animation au bouton lors du clic */
+#c-button:active {
+  animation: clickAnimation 0.4s ease;
+}

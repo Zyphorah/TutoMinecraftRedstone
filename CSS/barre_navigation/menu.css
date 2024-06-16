@@ -1,0 +1,75 @@
+#menu-icon {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 48px;
+    height: var(--navbar-height);
+    color: white;
+    display: none;
+}
+
+/* Styles pour les sous-menus */
+.submenu {
+    position: relative;
+
+    .ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+    }
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+.show  {
+    left: 0;
+    transition: all .5s ease;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 650px) 
+{
+    #menu-icon {
+        display: block;
+        background-color: #333;
+        
+        /* Si vous voulez seulement mettre l'icône (sans la barre sombre) */
+        /* width: 48px; */
+    }
+    #menu-icon:hover {
+        background-color: #444;
+    }
+
+    nav {
+
+        transition: all .5s ease;
+        position: absolute;
+        left: calc(-100% + 3rem);
+        width: calc(100% - 3rem);
+        height: calc(100vh - var(--navbar-height));
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+
+        .ul 
+        {
+            flex-direction: column;
+        }
+    
+        .li {
+            text-align: left;
+        }
+    
+        .submenu .ul {
+            display: block;
+            position: inherit;
+            padding-left: 0.5rem;
+            background-color: transparent;
+        }
+    }
+}

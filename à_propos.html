@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À_propos</title>
+    <link rel="stylesheet" href="css/styleCommun.css">
+    <link rel="stylesheet" href="CSS/styleÀpropos.css">
+    <link rel="stylesheet" href="css/formulaire_contact.css">
+    <link rel="stylesheet" href="css/barre_navigation/base.css">
+    <link rel="stylesheet" href="css/barre_navigation/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/menu.js"></script>
+</head>
+<body>
+    <span id="menu-icon" class="material-symbols-outlined">menu</span>
+    <nav id="main-menu">
+        <ul class="ul">
+            <img src="image/Logo.jfif" id="logo" alt="">
+            <li class="li"><a class="a" href="index.html">Accueil</a></li>
+            <li class="submenu li">
+                <a class="a" href="#">Tuto</a>
+                <ul class="ul">
+                    <li class="li"><a class="a" href="Tuto_Alu.html">Alu</a></li>
+                    <li class="li"><a class="a" href="Tuto_registre.html">registre</a></li>
+                    <li class="li"><a class="a" href="Tuto_decodeur_7_segment.html">decodeur_7_segment</a></li>
+                </ul>
+            </li>
+            <li class="li"><a class="a" id="tutoListe" href="à_propos.html">À propos</a></li>
+            <li class="li"><a class="a" href="à_propos.html#content_form">Contact</a></li>
+            <button id="c-button" class="c-button c-button--gooey">
+                Dark thème
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+        </ul>
+    </nav>
+   
+
+    <section class="content_À_propos">
+    <section class="Àpropos">
+        <h1>À propos de nous</h1>
+        <h2>Notre Histoire</h2>
+        <p>Fondé en 2024 par un groupe d’enseignants passionnés et de joueurs de Minecraft, le Portail d’Apprentissage Minecraft a commencé comme un projet communautaire visant à enrichir l’expérience éducative à travers le jeu.
+             Notre mission est de transformer la passion pour Minecraft en opportunités d’apprentissage, en explorant les concepts de l’électronique et de la logique de manière ludique et interactive.
+              Nous croyons que Minecraft est plus qu’un jeu; 
+              c’est une plateforme qui ouvre les portes à une compréhension plus profonde des systèmes complexes, tout en s’amusant.</p>
+    </section>
+    <section class="Àpropos">
+        <h1>Notre Équipe</h1>
+        <p>Nous sommes fiers de notre équipe dévouée de professeurs et d’experts en redstone, chacun apportant une expertise unique dans le domaine de l’éducation et du jeu. Nos membres incluent :</p>
+        <ul>
+            <li><strong>Raphael Arseneault</strong>, Fondateur et Expert en Redstone : Avec une expérience en informatique et une passion pour l’enseignement, Raphael dirige l’équipe avec innovation et créativité.</li>
+            <li><strong>Bernard</strong>, Professeur de Logique : Spécialiste en circuits logiques, Alexis aide les étudiants à comprendre les fondements de la redstone.</li>
+            <li><strong>Robert</strong>, Architecte de Redstone : Emilie apporte une touche artistique à la construction, en montrant comment la redstone peut être utilisée pour créer des œuvres magnifiques.</li>
+            <li><strong>Thomas</strong>, Ingénieur en Redstone : Avec une approche technique, Lucas guide les étudiants à travers les aspects les plus complexes de Minecraft.</li>
+        </ul>
+    </section>
+
+    <section class="Àpropos">
+        <h1>Notre Philosophie</h1>
+        <p>Nous croyons que l’apprentissage doit être accessible, amusant et engageant. C’est pourquoi nous avons intégré des éléments de jeu dans nos méthodes d’enseignement. En utilisant Minecraft comme outil pédagogique, nous encourageons la pensée critique, la résolution de problèmes et la créativité. Nos cours sont conçus pour stimuler l’intérêt des étudiants et leur donner les compétences nécessaires pour réussir dans un monde de plus en plus axé sur la technologie.</p>
+    </section>
+
+    <section class="Àpropos">
+        <h1>Nos Cous</h1>
+        <p>Nous offrons une variété de cours qui couvrent tout, des bases de la redstone aux concepts avancés de construction et de programmation dans Minecraft. Que vous soyez un débutant complet ou un joueur expérimenté, nous avons quelque chose pour vous. Nos cours sont constamment mis à jour pour refléter les dernières tendances et techniques dans le monde de Minecraft et de l’éducation.</p>
+    </section>
+    <section class="Àpropos">
+        <h1>Engagement Communautaire</h1>
+        <p>Nous sommes engagés dans la communauté Minecraft et éducative. Nous participons à des événements, des conférences et des compétitions pour rester connectés avec les dernières innovations et partager nos connaissances avec un public plus large.</p>
+    </section>
+    <section class="Àpropos">
+        <h1>Contactez-Nous</h1>
+        <p>Pour toute question, suggestion ou inscription à nos cours, n’hésitez pas à nous contacter :</p>
+        <ul>
+            <li><strong>Email</strong>:info@minecraftedu.com</li>
+            <li><strong>Téléphone</strong>:+1 555-0123</li>
+            <li><strong>Adresse</strong>:123 Rue de la Redstone, Rimouski, Québec, Canada</li>
+        </ul>
+        <p>Rejoignez-nous pour explorer le monde de Minecraft sous un nouvel angle et transformer votre passion en savoir !</p>
+    
+        <div id="content_form">
+            <form action="inscription.html" method="post" id="formulaire">
+                <h1>Formulaire de contact</h1>
+                <div id="wrap_form">
+                    
+                        <div id="name">
+                        <label for="name">Nom:</label>
+                        <input id="first_name" placeholder="first name" type="text" name="name">
+                        <input placeholder="last name" type="text" name="name">
+                    </div>
+                    <div id="wrap_register">
+                        <div class="register_div">
+                             <label for="email">Email:</label>
+                             <input class="register" placeholder="example@gmail.com" type="email" name="email">
+                        </div>
+                       
+                        <div class="register_div">
+                            <label for="message">Message</label>
+                            <textarea id="message"></textarea>
+                        </div>
+    
+                        <button type="submit">Envoyer</button>
+                    </div>
+                    
+                </div>
+            </form>
+    </div>
+    </section>
+    </section>
+    <footer>
+        <a href="#">@ Copyrignt Raphael Arseneault</a>
+        <a href="#">Cégep de rimouski</a>
+        <a href="#">Autre site</a>
+        <a href="à_propos.html">À propos</a>
+        <a href="#">Retour</a>
+    </footer>
+    <script src="js/darkThème.js"></script>
+</body>
+</html>

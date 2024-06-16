@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuto alu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/tutoStyle.css">
+    <link rel="stylesheet" href="CSS/styleCommun.css">
+    <link rel="stylesheet" href="css/barre_navigation/base.css">
+    <link rel="stylesheet" href="css/barre_navigation/menu.css">
+    
+    <script src="js/menu.js"></script>
+    
+</head>
+<body>
+    <span id="menu-icon" class="material-symbols-outlined">menu</span>
+    <nav id="main-menu">
+        <ul class="ul">
+            <img src="image/Logo.jfif" id="logo" alt="">
+            <li class="li"><a class="a" href="index.html">Accueil</a></li>
+            <li class="submenu li">
+                <a class="a" href="#" id="tutoListe">Tuto</a>
+                <ul class="ul">
+                    <li class="li"><a class="a" id="tutoListe" href="Tuto_Alu.html">Alu</a></li>
+                    <li class="li"><a class="a" href="Tuto_registre.html">registre</a></li>
+                    <li class="li"><a class="a" href="Tuto_decodeur_7_segment.html">decodeur_7_segment</a></li>
+                </ul>
+            </li>
+            <li class="li"><a class="a" href="à_propos.html">À propos</a></li>
+            <li class="li"><a class="a" href="à_propos.html#content_form">Contact</a></li>
+            <button id="c-button" class="c-button c-button--gooey">
+                Dark thème
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+        </ul>
+    </nav>
+   
+
+    <main id="content">
+
+        <video id="tuto_video" src="Vidéo/alu.mp4" type="vidéo/mp4"  autoplay loop></video>
+          
+          <section class="tuto">
+            <p>Dans Minecraft, un ALU (Arithmetic Logic Unit) est un composant technique qui effectue des opérations arithmétiques et logiques. Il peut additionner, soustraire, comparer, et effectuer des opérations telles que ET, OU, NON, et XOR sur des signaux de redstone. Ce tuto sera dédié à la création d'un additionneur.</p>
+          </section>
+        <section class="tuto droit">
+            <img src="image/alu/Étape_1.png" class="img_tuto" alt="">
+            <div>
+                <h1>Étape 1</h1>
+                <h2>Créer une porte XOR simple :</h2>
+                <p>Vous pouvez construire une <strong>porte XOR</strong> en utilisant des <strong>blocs de redstone</strong>, des <strong>torches de redstone</strong>, des <strong>portes logiques</strong> et des <strong>répéteurs</strong>.</p>
+                <p>La <strong>porte XOR</strong> (OU exclusif) produit une <strong>sortie activée (1)</strong> lorsqu'une <strong>seule</strong> de ses deux entrées est activée (1), mais pas les deux. Si les entrées sont identiques (0 ou 1), la sortie est désactivée (0). C’est essentiel pour la <strong>logique</strong> et les <strong>circuits</strong> dans <strong>Minecraft</strong> et l’<strong>informatique</strong>.</p>
+            </div>
+           
+        </section>
+        <section class="tuto inverse">
+            <!-- Étape 2 -->
+            <div>
+            <h1>Étape 2</h1>
+            <h2>Préparez la porte AND :</h2>
+            <ul>
+                <li>Une <strong>porte AND</strong> nécessite deux entrées et produit une <strong>sortie activée</strong> uniquement si les deux entrées sont activées.</li>
+                <li>Construisez la <strong>porte AND</strong> à proximité de la <strong>porte XOR</strong>.</li>
+            </ul>
+            <h2><strong>Connectez la porte XOR à la porte AND :</strong></h2>
+            <ul>
+                <li>Utilisez du <strong>fil de redstone</strong> pour relier la <strong>sortie de la porte XOR</strong> aux <strong>entrées de la porte AND</strong>.</li>
+                <li><strong>Connecteur A</strong> : Reliez la <strong>sortie de la porte XOR</strong> à la <strong>première entrée de la porte AND</strong>.</li>
+                <li><strong>Connecteur B</strong> : Reliez la <strong>sortie de la porte XOR</strong> à la <strong>deuxième entrée de la porte AND</strong>.</li>
+            </ul>
+            <h2><strong>Testez le circuit combiné :</strong></h2>
+            <ul>
+                <li>Activez différentes <strong>combinaisons des leviers</strong> de la <strong>porte XOR</strong>.</li>
+                <li>Observez la <strong>sortie de la porte AND</strong> pour vérifier que le <strong>circuit fonctionne correctement</strong>.</li>
+            </ul>
+        </div>
+            <img src="image/alu/Étape_2.png" class="img_tuto" alt="">
+        </section>
+        <section class="tuto droit">
+            <!-- Étape 3 -->
+           
+            <img src="image/alu/Étape_3.png" id="img_étape3" class="img_tuto" alt="">
+             <div>
+                
+                <h1>Étape 3</h1>
+                <h2>Construisez le deuxième demi-additionneur :</h2>
+                 <ul>
+                   <li>Construisez un <strong>deuxième demi-additionneur</strong> identique au premier, mais il sera utilisé pour traiter le <strong>report du premier demi-additionneur</strong>.</li>
+              </ul>
+              <h2><strong>Testez le circuit:</strong></h2>
+              <ul>
+                  <li>Activez différentes <strong>combinaisons des leviers</strong> de la <strong>porte XOR</strong> et de la <strong>porte AND</strong>.</li>
+                  <li>Observez la <strong>sortie de la porte AND</strong> pour vérifier que le <strong>circuit fonctionne correctement</strong>.</li>
+              </ul>
+        </div>
+        </section>
+        
+        <section class="tuto inverse">
+        <!-- Étape 4 -->
+        <div>
+        <h1>Étape 4</h1>
+        <h2>Connectez les demi-additionneurs :</h2>
+        <ul>
+            <li><strong>Somme partielle :</strong> Connectez la sortie de la somme du premier demi-additionneur à l’entrée XOR du deuxième demi-additionneur.</li>
+            <li><strong>Report :</strong> Connectez la sortie de report du premier demi-additionneur à l’entrée AND du deuxième demi-additionneur.</li>
+        </ul>
+        <h2>Sortie finale :</h2>
+        <ul>
+            <li>La sortie de la somme du deuxième demi-additionneur sera la <strong>somme finale</strong> de l’additionneur 1 bit.</li>
+            <li>Connectez les sorties de report des deux demi-additionneurs à une porte OR pour obtenir le <strong>report final</strong>.</li>
+        </ul>
+    </div>
+        <img src="image/alu/Étape_4.png" class="img_tuto" alt="">
+    </section>
+    <section class="tuto droit">
+        <!-- Étape 5 -->
+       
+             <img src="image/alu/Étape_5.png" class="img_tuto" alt="">
+             <div>
+         
+             <h1>Étape 5</h1>
+             <h2>Additionneur 8 bit</h2>
+          <ul>
+            <li><strong>Préparation :</strong> Préparez plusieurs additionneurs binaires 1 bit, chacun représentant un bit différent dans le nombre à additionner.</li>
+            <li><strong>Superposition :</strong> Placez les additionneurs l’un au-dessus de l’autre, en alignant soigneusement les entrées et les sorties pour qu’elles correspondent.</li>
+        </ul>
+        <p>Cette structure vous permettra de réaliser des additions binaires sur plusieurs bits.</p>
+        <h2>Utiliser la Commande /clone</h2>
+        <ol>
+            <li>Ouvrez la console de commande et tapez la commande suivante :</li>
+            <li><code>/clone &lt;x1&gt; &lt;y1&gt; &lt;z1&gt; &lt;x2&gt; &lt;y2&gt; &lt;z2&gt; &lt;x3&gt; &lt;y3&gt; &lt;z3&gt;</code></li>
+            <li>Remplacez <code> &lt;x1&gt; &lt;y1&gt; &lt;z1&gt; et &lt;x2&gt; &lt;y2&gt; &lt;z2&gt;</code> par les coordonnées des coins de la zone à cloner, et <code>&lt;x3&gt; &lt;y3&gt; &lt;z3&gt;</code> par les coordonnées où vous voulez placer la copie.</li>
+            <li><strong>Vérifiez la Duplication</strong> Après avoir exécuté la commande, vérifiez que le circuit a été correctement cloné à l’emplacement souhaité.</li>
+            <li><strong>Duplication Multiple</strong> Si vous avez besoin de plusieurs copies, répétez le processus en ajustant les coordonnées de destination pour chaque nouvelle copie.</li>
+        </ol>
+    </div>
+    </section>
+    <section class="tuto inverse">
+        <!-- Étape 6 -->
+    <div>
+        <h1>Étape 6</h1>
+        <h2>Connexion :</h2>
+        <ul>
+            <li>Connectez la sortie de report (carry) d’un additionneur à l’entrée de report du suivant, en commençant par le bit le moins significatif.</li>
+            <li><strong>Finalisation :</strong> La sortie de somme du dernier additionneur représente le bit le plus significatif de la somme totale.</li>
+        </ul>
+    </div>
+        <img src="image/alu/Étape_6.png" class="img_tuto" alt="">
+    </section>
+    <section class="tuto droit">
+        <img src="image/alu/Étape_7.png" class="img_tuto" alt="">
+    <div>
+        <!-- Étape finale -->
+        <h1>Étape finale</h1>
+        <p>Pour finaliser votre additionneur binaire dans Minecraft, il est crucial de <strong>valider les sorties</strong>. Testez différentes combinaisons d’entrées et vérifiez que les sorties de somme et de report correspondent aux attentes. Cela garantira le bon fonctionnement de votre circuit logique.</p>
+    </section>    
+    </div>
+</main>
+        
+
+    </div>        
+    <footer>
+        <a href="#">@ Copyrignt Raphael Arseneault</a>
+        <a href="#">Cégep de rimouski</a>
+        <a href="#">Autre site</a>
+        <a href="à_propos.html">À propos</a>
+        <a href="#">Retour</a>
+    </footer>
+    <script src="jsPlayVidéo.js"></script>
+    <script src="js/darkThème.js"></script>
+</body>
+</html>

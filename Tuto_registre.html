@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création d'un registre 8 bits dans Minecraft</title>
+    <link rel="stylesheet" href="CSS/tutoStyle.css">
+    <link rel="stylesheet" href="CSS/styleCommun.css">
+    <link rel="stylesheet" href="css/barre_navigation/base.css">
+    <link rel="stylesheet" href="css/barre_navigation/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/menu.js"></script>
+</head>
+<body>
+
+    <span id="menu-icon" class="material-symbols-outlined">menu</span>
+    <nav id="main-menu">
+        <ul class="ul">
+            <img src="image/Logo.jfif" id="logo" alt="">
+            <li class="li"><a class="a" href="index.html">Accueil</a></li>
+            <li class="submenu li">
+                <a class="a" href="#" id="tutoListe">Tuto</a>
+                <ul class="ul">
+                    <li class="li"><a class="a" href="Tuto_Alu.html">Alu</a></li>
+                    <li class="li"><a class="a" id="tutoListe" href="Tuto_registre.html">registre</a></li>
+                    <li class="li"><a class="a" href="Tuto_decodeur_7_segment.html">decodeur_7_segment</a></li>
+                </ul>
+            </li>
+            <li class="li"><a class="a" href="à_propos.html">À propos</a></li>
+            <li class="li"><a class="a" href="à_propos.html#content_form">Contact</a></li>
+            <button id="c-button" class="c-button c-button--gooey">
+                Dark thème
+                <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+        </ul>
+    </nav>
+   
+
+    <main id="content">
+    <video id="tuto_video" src="vidéo/registre_8_bits.mp4" type="video/mp4" autoplay loop></video> 
+<section class="tuto">
+    <p>Dans Minecraft, un registre est un composant technique qui stocke des informations. Il peut être utilisé pour enregistrer des événements, des données de jeu ou des interactions. </p>
+</section>
+      <!-- Étape 1 -->
+<section class="tuto droit">
+    <img src="image/registre 8 bits/Étape_1.png" class="img_tuto" alt="">        
+    <div>
+         <h1>Étape 1: Placement des Blocs de Laine</h1>
+         <p><strong>Commencez par placer les blocs de laine</strong> en formant une grille de la taille nécessaire pour votre porte SR-NAND. <strong>Assurez-vous que les blocs de laine sont correctement alignés</strong> pour créer le circuit.</p>
+         <p><strong>Installation du Redstone:</strong> Posez la redstone sur les blocs de laine en suivant le motif spécifique pour créer le circuit SR-NAND. La redstone doit être connectée de manière à former la porte logique souhaitée.</p>
+         <p><strong>Positionnement des Torches:</strong> Installez les torches de redstone aux endroits clés pour maintenir le circuit allumé ou éteint selon l'état souhaité. Les torches de redstone sont essentielles pour le fonctionnement de la porte SR-NAND.</p>               
+    </div>
+</section>
+
+<!-- Étape 2 -->
+<section class="tuto inverse">
+    <div>
+        <h1>Étape 2: Transformation en Bascule JK</h1>
+        <p><strong>Comprendre le Circuit:</strong> Identifiez les composants du circuit SR-NAND que vous avez déjà construit, qui seront la base pour le JK-flip-flop.</p>
+        <p><strong>Ajouter des Entrées JK:</strong> Ajoutez deux entrées supplémentaires pour J et K. Ces entrées permettront de contrôler l'état de la bascule.</p>
+        <p><strong>Boucler le Circuit:</strong> Connectez les sorties de la porte SR-NAND aux entrées J et K à travers des portes logiques supplémentaires pour créer la boucle de rétroaction nécessaire à un JK-flip-flop.</p>
+        <p><strong>Vérifier le Fonctionnement:</strong> Testez le circuit pour vous assurer qu'il change d'état correctement en fonction des entrées J et K et qu'il maintient l'état lorsque nécessaire.</p>
+    </div>
+    <img src="image/registre 8 bits/Étape_2.png" class="img_tuto" alt="">  
+</section>
+
+<!-- Étape 3 -->
+<section class="tuto droit">
+    <img src="image/registre 8 bits/Étape_3.png" class="img_tuto" alt="">  
+    <div>
+        <h1>Étape 3: Duplication du Circuit JK-flip-flop</h1>
+        <p><strong>Identifier les Coordonnées:</strong> Trouvez les coordonnées des deux coins opposés du circuit JK-flip-flop que vous souhaitez cloner. Ces coordonnées définiront la zone à copier.</p>
+        <p><strong>Utiliser la Commande /clone:</strong> Ouvrez la console de commande et tapez la commande suivante :</p>
+        <code>/clone <x1> <y1> <z1> <x2> <y2> <z2> <x3> <y3> <z3></code>
+        <p><strong>Vérifier la Duplication:</strong> Après avoir exécuté la commande, vérifiez que le circuit a été correctement cloné à l'emplacement souhaité.</p>
+        <p><strong>Duplication Multiple:</strong> Si vous avez besoin de plusieurs copies, répétez le processus en ajustant les coordonnées de destination pour chaque nouvelle copie.</p>
+    </div>
+</section>
+
+        <!-- Étape 4 -->
+<section class="tuto inverse">
+    <div>
+        <h1>Étape 4: Connexion des Circuits JK flip-flop</h1>
+        <p><strong>Entrées J et K Indépendantes:</strong> Assurez-vous que chaque JK flip-flop a ses propres entrées J et K pour contrôler indépendamment chaque bit.</p>
+        <p><strong>Sortie Q vers Horloge:</strong> Connectez la sortie (Q) du premier flip-flop à l'entrée d'horloge (Clock) du second flip-flop. Cela permet de propager l'état d'un bit au suivant lors des changements d'état.</p>
+        <p><strong>Horloge Commune:</strong> Utilisez une horloge commune pour synchroniser les opérations des deux flip-flops. Cela garantit que les deux bits changent d'état simultanément.</p>
+        <p><strong>Sorties Q:</strong> Les sorties Q des deux flip-flops représentent les deux bits de votre registre. Utilisez ces sorties pour lire l'état du registre.</p>
+    </div>
+    <img src="image/registre 8 bits/Étape_4.png" class="img_tuto" alt="">  
+</section>
+
+<!-- Étape 5 -->
+<section class="tuto droit">
+    <img src="image/registre 8 bits/Étape_5.png" class="img_tuto" alt="">  
+    <div>
+        <h1>Étape 5: Construction d'une Tour de Stockage de 8 Bits</h1>
+        <p><strong>Cette méthode vous permettra de construire une tour qui permettra de stocker 8 bits de donnée dans Minecraft.</strong></p>
+        <p><strong>Utiliser la Commande /clone:</strong> Ouvrez la console de commande et tapez la commande suivante :</p>
+        <code>/clone &lt;x1&gt; &lt;y1&gt; &lt;z1&gt; &lt;x2&gt; &lt;y2&gt; &lt;z2&gt; &lt;x3&gt; &lt;y3&gt; &lt;z3&gt;</code>
+        <p><strong>Remplacez &lt;x1&gt; &lt;y1&gt; &lt;z1&gt; et &lt;x2&gt; &lt;y2&gt; &lt;z2&gt; par les coordonnées des coins de la zone à cloner, et &lt;x3&gt; &lt;y3&gt; &lt;z3&gt; par les coordonnées où vous voulez placer la copie.</strong></p>
+        <p><strong>Vérifier la Duplication:</strong> Après avoir exécuté la commande, vérifiez que le circuit a été correctement cloné à l'emplacement souhaité.</p>
+        <p><strong>Duplication Multiple:</strong> Si vous avez besoin de plusieurs copies, répétez le processus en ajustant les coordonnées de destination pour chaque nouvelle copie.</p>
+        <p><strong>Vérification:</strong> Testez la tour de registres pour vous assurer que chaque registre fonctionne correctement et peut stocker un bit de manière indépendante. Cette méthode vous permettra de construire une tour de 8 registres pour stocker 8 bits, optimisant ainsi l'espace et l'efficacité de votre circuit dans Minecraft.</p>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <a href="#">@ Copyrignt Raphael Arseneault</a>
+        <a href="#">Cégep de rimouski</a>
+        <a href="#">Autre site</a>
+        <a href="à_propos.html">À propos</a>
+        <a href="#">Retour</a>
+    </footer>
+    <script src="jsPlayViédo.js"></script>
+    <script src="js/darkThème.js"></script>
+</body>
+</html>
